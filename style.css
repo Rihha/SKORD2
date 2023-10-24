@@ -1,0 +1,430 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@1,300&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Montserrat&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  outline: none;
+  border: none;
+  text-decoration: none;
+  scroll-behavior: smooth;
+  /* font-family: 'Montserrat', sans-serif; */
+  transition: all 0.6s linear;
+}
+
+html {
+  font-size: 62.5%;
+  overflow-x: hidden;
+  scroll-behavior: smooth;
+  scroll-padding-top: 7rem;
+}
+
+html::-webkit-scrollbar{
+  width: 1rem;
+}
+html::-webkit-scrollbar-thumb{
+  background: aqua;
+  border-radius: 1rem;
+  
+}
+html::-webkit-scrollbar-track{
+  background: black;
+}
+
+
+body {
+  height: 100%;
+  width: 100%;
+  background: transparent;
+}
+section {
+  padding: 2rem 9%;
+}
+.heading {
+  margin: 3rem 0;
+  text-align: center;
+}
+.heading h1 {
+  font-size: 5rem;
+  font-family: "Montserrat", sans-serif;
+  color: #ffffff;
+}
+.heading h1 span {
+  color: aqua;
+}
+header {
+  background: url("../SKORD/images/water5.jpg") no-repeat;
+  background-size: cover;
+  background-position: center;
+  height: 90vh;
+}
+
+.navBar {
+  width: 100%;
+  display: flex;
+  padding: 2rem 9%;
+  justify-content: space-between;
+  align-items: center;
+  /* background: rgba(53, 53, 53, 0.47); */
+  backdrop-filter: blur(20px);
+  z-index: 100;
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+}
+
+.logo a {
+  color: aliceblue;
+  font-size: 3.7rem;
+  font-family: "Montserrat", sans-serif;
+}
+.logo a span {
+  color: aqua;
+}
+.navLink a {
+  display: inline-block;
+  margin-left: 4rem;
+  font-family: "Tillana", cursive;
+  text-decoration: none;
+  /* padding: 5% 20px; */
+  font-size: 2rem;
+  color: #ffffff;
+  position: relative;
+}
+.navLink a:hover {
+  color: aqua;
+}
+.navLink a::after {
+  content: "";
+  position: absolute;
+  width: 1rem;
+  height: 3rem;
+  /* background-color: aqua;
+  border-bottom: .1rem solid aqua;
+  bottom: 100%;
+  left: 0;
+  right: 0; */
+}
+.navIcons {
+  font-size: 2rem;
+  color: aqua;
+  display: none;
+}
+.sec1 {
+  padding: 2rem 9%;
+}
+.main {
+  margin: 5rem 0;
+  margin-top: 25rem;
+  width: 40rem;
+}
+.main h1 {
+  color: white;
+  font-size: 5rem;
+  font-family: "Montserrat", sans-serif;
+}
+.main h1 span {
+  color: aqua;
+}
+.main p {
+  color: #ffffff;
+  font-size: 1.3rem;
+  padding: 1rem 0;
+  font-family: "Tillana", cursive;
+}
+.about {
+  padding: 2rem 9%;
+  background-color: #ffffff;
+}
+.about_container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 5rem;
+  margin-top: 7.6rem;
+  margin-bottom: 6rem;
+}
+.about_image {
+  flex: 1 1 50%;
+  /* width: 35vw; */
+  border-radius: 2rem;
+  /* width: 40vw; */
+}
+.about_image img {
+  /* width: 100%; */
+  width: 100%;
+  border-radius: inherit;
+}
+.about_content {
+  flex: 1 1 50%;
+}
+.about_content h1 {
+  font-size: 4.5rem;
+  font-weight: bold;
+  margin-bottom: 2rem;
+  font-family: "Montserrat", sans-serif;
+}
+.about_content h1 span {
+  color: aqua;
+}
+.about_content p {
+  font-size: 1.6rem;
+  line-height: 1.5;
+  padding: 2rem 0;
+  font-family: "Tillana", cursive;
+}
+.about_content p span {
+  color: aqua;
+}
+.lines {
+  margin: 3rem 0;
+  margin-top: 5rem;
+}
+.lines .inner {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 6rem;
+  text-align: center;
+  flex-wrap: wrap;
+}
+.lines p {
+  font-size: 2rem;
+  font-family: "Tillana", cursive;
+}
+.lines .inner .one {
+ 
+  /* padding: 0 6.2rem; */
+}
+.lines .inner .two {
+  border-right: 2px solid aqua;
+  border-left: 2px solid aqua;
+  padding: 0 6.2rem;
+}
+.products {
+  background-color: black;
+}
+.product_container {
+  display: grid;
+  /* grid-template-columns: repeat(3, 1fr); */
+  grid-template-columns: repeat(auto-fit, minmax(30rem, 1fr));
+  gap: 6rem;
+  color: black;
+  padding: 6rem 0;
+}
+.product_box {
+  height: 17rem;
+  background-color: white;
+  padding: 2rem;
+  border-radius: 2rem;
+}
+.product_box:hover {
+  transform: scale(1.1);
+}
+.product_box h3 {
+  font-size: 1.7rem;
+  font-family: "Montserrat", sans-serif;
+}
+.product_box p {
+  font-size: 1.2rem;
+  padding: 1rem 0;
+  line-height: 1.5;
+  font-family: "Tillana", cursive;
+}
+.product_box .price {
+  font-size: 2.5rem;
+  font-family: "Tillana", cursive;
+}
+.sec2 {
+  background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)),
+    url(../SKORD/images/water2.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: right;
+  width: 100%;
+  height: 50vh;
+  background-attachment: fixed;
+}
+/* .sec2_container{
+  text-align: center;
+  display: grid;
+  place-items: center;
+}
+.sec2_content{
+  color: white;
+}
+.sec2_content h4{
+  font-size: 3rem;
+  width: 70rem;
+  font-family: "Tillana", cursive;
+  margin-top: 13rem;
+}
+.sec2_content h4 span{
+  color: aqua;
+} */
+.sec2_content {
+  color: white;
+  display: flex;
+  justify-content: center;
+  gap: 3rem;
+  align-items: center;
+  /* text-align: center; */
+  margin-top: 10rem;
+}
+.sec2_content p {
+  font-size: 5rem;
+  font-family: "Montserrat", sans-serif;
+}
+.sec2_content h4 {
+  font-size: 1.5rem;
+  font-family: "Tillana", cursive;
+  width: 40rem;
+}
+.twoo {
+  border-right: 2px solid aqua;
+  padding: 0 6.2rem;
+}
+.contact {
+  background-color: black;
+}
+.contact form {
+  width: 60rem;
+  border: 0.1rem solid black;
+  margin: 2rem auto;
+  text-align: center;
+  margin-bottom: 5rem;
+}
+.contact form .input_box {
+  display: flex;
+  justify-content: space-between;
+  /* flex-wrap: wrap; */
+  gap: 2rem;
+}
+.contact form .input_box input,
+.contact form textarea {
+  width: 100%;
+  padding: 1.5rem;
+  font-size: 1.5rem;
+  font-family: "Tillana", cursive;
+  color: black;
+  margin: 0.7rem 0;
+  border-radius: 0.8rem;
+}
+.btn {
+  padding: 1.5rem 2rem;
+  border: none;
+  border-radius: 1rem;
+  background-color: aqua;
+  /* color: white; */
+  font-size: 1.5rem;
+  display: inline-block;
+}
+.btn:hover {
+  box-shadow: 0 0 3rem aqua;
+  transform: scale(1.1);
+}
+
+@media screen and (max-width: 1028px) {
+  html {
+    font-size: 55%;
+  }
+}
+
+@media screen and (max-width: 991px) {
+}
+
+@media screen and (max-width: 768px) {
+  .navBar {
+    padding: 2rem;
+  }
+  .navIcons {
+    display: inline-block;
+    font-size: 3rem;
+    cursor: pointer;
+  }
+  .navLink {
+    align-items: center;
+    justify-content: center;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    flex-direction: column;
+    background: black;
+    width: 100%;
+    clip-path: polygon(0 0, 100% 1%, 100% 1%, 0 0);
+  }
+  .navLink.active {
+    clip-path: polygon(0 0, 100% 1%, 100% 100%, 0 100%);
+  }
+  .navLink a {
+    padding: 2rem 1rem;
+    display: block;
+  }
+  .navLink a:hover {
+    /* background: rgba(53, 53, 53, 0.47); */
+  }
+  .sec1 {
+    padding: 2rem;
+  }
+  .main h1 {
+    color: white;
+    font-size: 3rem;
+  }
+  .main p {
+    color: #ffffff;
+    font-size: 1rem;
+    padding: 1rem 0;
+  }
+
+  .about_container {
+    flex-direction: column;
+  }
+  .contact form .input_box {
+    flex-wrap: wrap;
+    gap: 0.8rem;
+  }
+  .contact form {
+    width: 100%;
+  }
+  .sec2_content h4 {
+    font-size: 2rem;
+    /* width: 70rem; */
+    font-family: "Tillana", cursive;
+    margin-top: 13rem;
+  }
+
+  
+
+}
+
+@media screen and (max-width: 480px) {
+  html {
+    font-size: 50%;
+  }
+  /*    
+header{
+    background: url('../SKORD/images/water5.jpg') no-repeat;
+    background-size: cover;
+    background-position: center;
+    height: 150vh;
+}
+    .navIcons{
+        font-size:3rem ;
+        color: white;
+        display: inline-block;
+    }
+
+    .navList{
+        position: absolute;
+        top: 100%;
+        left: 0;
+
+    }
+    /* .navList ul {
+        display: flex;
+        padding: .8rem 1.5rem;
+        list-style: none;
+        display: none;
+    } */
+}
