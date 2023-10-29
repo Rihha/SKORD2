@@ -8,7 +8,7 @@
   border: none;
   text-decoration: none;
   scroll-behavior: smooth;
-  /* font-family: 'Montserrat', sans-serif; */
+  font-family: 'Montserrat', sans-serif;
   transition: all 0.6s linear;
 }
 
@@ -34,8 +34,10 @@ html::-webkit-scrollbar-track{
 
 body {
   height: 100%;
-  width: 100%;
+  width: 100vw;
+  max-width: 100%;
   background: transparent;
+  overflow-x: hidden;
 }
 section {
   padding: 2rem 9%;
@@ -53,14 +55,14 @@ section {
   color: aqua;
 }
 header {
-  background: url("../SKORD/images/water5.jpg") no-repeat;
+  background: url("images/water5.jpg") no-repeat;
   background-size: cover;
   background-position: center;
-  height: 90vh;
+  height: 70vh;
 }
 
 .navBar {
-  width: 100%;
+
   display: flex;
   padding: 2rem 9%;
   justify-content: space-between;
@@ -73,6 +75,9 @@ header {
   left: 0;
   right: 0;
 }
+.navBar.active{
+  background: black;
+}
 
 .logo a {
   color: aliceblue;
@@ -81,6 +86,17 @@ header {
 }
 .logo a span {
   color: aqua;
+}
+.logo p{
+  color: #ffffff;
+  margin-top: -.8rem;
+  font-size: 1rem;
+}
+.navLink{
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
 }
 .navLink a {
   display: inline-block;
@@ -96,27 +112,31 @@ header {
   color: aqua;
 }
 .navLink a::after {
-  content: "";
+  /* content: ""; */
   position: absolute;
   width: 1rem;
   height: 3rem;
-  /* background-color: aqua;
-  border-bottom: .1rem solid aqua;
-  bottom: 100%;
-  left: 0;
-  right: 0; */
 }
+
 .navIcons {
   font-size: 2rem;
   color: aqua;
   display: none;
+}
+.cartt{
+  margin-left: 1rem;
+  display: inline-block;
+}
+.cartt i{
+  font-size: 2.5rem;
+  color: #ffffff;
 }
 .sec1 {
   padding: 2rem 9%;
 }
 .main {
   margin: 5rem 0;
-  margin-top: 25rem;
+  margin-top: 17rem;
   width: 40rem;
 }
 .main h1 {
@@ -214,20 +234,61 @@ header {
   padding: 6rem 0;
 }
 .product_box {
-  height: 17rem;
-  background-color: white;
-  padding: 2rem;
+  color: white;
+  background: white;
   border-radius: 2rem;
 }
 .product_box:hover {
   transform: scale(1.1);
 }
-.product_box h3 {
-  font-size: 1.7rem;
+.product_image{
+  width: 100%;
+  height: 20rem;
+  max-width: 100%;
+  overflow: hidden;
+}
+.product_image img{
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+  padding: 1.5rem;
+}
+.product_content{
+  color: black;
+  padding: 1.5rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  }
+
+  .product_content h1{
+    font-size: 3rem;
+    margin: 1.5rem 0;
+    font-family: "Montserrat", sans-serif;
+    color: #002c8f;
+  }
+  .product_content p{
+    color: black;
+    font-size: 2rem;
+    padding: 1rem 0;
+    font-family: "Tillana", cursive;
+
+  }
+ .price{
+  font-size: 2rem;
+  margin-top: 1.5rem;
+  font-family: "Tillana", cursive;
+ }
+ .product_content .btn{
+  margin-top: 2rem;
+ }
+
+/* .product_box h3 {
   font-family: "Montserrat", sans-serif;
 }
-.product_box p {
-  font-size: 1.2rem;
+.product_content p {
+  font-size: 1.5rem;
   padding: 1rem 0;
   line-height: 1.5;
   font-family: "Tillana", cursive;
@@ -235,10 +296,10 @@ header {
 .product_box .price {
   font-size: 2.5rem;
   font-family: "Tillana", cursive;
-}
+} */
 .sec2 {
   background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)),
-    url(../SKORD/images/water2.jpg);
+    url(images/water2.jpg);
   background-repeat: no-repeat;
   background-size: cover;
   background-position: right;
@@ -248,7 +309,7 @@ header {
 }
 /* .sec2_container{
   text-align: center;
-  display: grid;
+  display: grid;  
   place-items: center;
 }
 .sec2_content{
@@ -324,8 +385,68 @@ header {
   box-shadow: 0 0 3rem aqua;
   transform: scale(1.1);
 }
+.footer{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  gap: 3rem;
+  background: black;
+  color: white;
+  border-top: .1rem solid aqua;
+}
+.footer_content{
+  margin: 6.5rem;
+}
+.footer_content h1{
+  font-size: 5rem;
+  margin-bottom: 0;
+}
+.footer_content h1 span{
+  color: aqua;
+}
+.footer_content h2{
+  margin-top: -8px;
+  font-size: 1.3rem;
+  margin-bottom: 0;
+}
+.footer_content p{
+  margin-top: 3rem;
+  font-size: 1.9rem;
+  width: 70rem;
+  margin-bottom: 3rem;
+}
+.footer_icons{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: .7rem;
+}
+.footer_icons i{
+  background-color: white;
+  padding: 2rem;
+  color: black;
+  font-size: 2.5rem;
+  border-radius: 50%;
+  cursor: pointer;
+}
+.footer_under{
+  color: black;
+  border-top: .1rem solid aqua;
+  text-align: center;
+  background-color: aqua;
+}
+.foot{
+  margin-top: 2rem;
+  font-size: 2rem;
+}
+.foot p span{
+  color: black;
+}
 
-@media screen and (max-width: 1028px) {
+ 
+  @media screen and (max-width: 1028px) {
   html {
     font-size: 55%;
   }
@@ -337,6 +458,7 @@ header {
 @media screen and (max-width: 768px) {
   .navBar {
     padding: 2rem;
+    width: 100%
   }
   .navIcons {
     display: inline-block;
@@ -362,15 +484,28 @@ header {
     display: block;
   }
   .navLink a:hover {
-    /* background: rgba(53, 53, 53, 0.47); */
+   
+  }
+  .navLink .iconsss{
+    color: #ffffff;
+  }
+  header{
+    width: 100%;
+  }
+  .about {
+    padding: 2rem;
+    width: 100%;
+    background-color: #ffffff;
   }
   .sec1 {
+    width: 100%;
     padding: 2rem;
+    width: 100%;
   }
   .main h1 {
     color: white;
     font-size: 3rem;
-  }
+  } */
   .main p {
     color: #ffffff;
     font-size: 1rem;
@@ -387,22 +522,88 @@ header {
   .contact form {
     width: 100%;
   }
+  .sec2_content{
+    margin-top: 15rem;
+  }
   .sec2_content h4 {
     font-size: 2rem;
-    /* width: 70rem; */
     font-family: "Tillana", cursive;
-    margin-top: 13rem;
+    
+  } 
+
+  .sec2_content p {
+    font-size: 3rem;
+    font-family: "Montserrat", sans-serif;
+  }
+  .sec2_content h4 {
+    font-size: 1.2rem;
+    font-family: "Tillana", cursive;
+    width: 30rem;
   }
 
-  
+  .twoo {
+    border-right: 2px solid aqua;
+    padding: 0 2rem;
+  }
+  .footer_content p{
+    margin-top: 3rem;
+    font-size: 1.5rem;
+    width: 50rem;
+    margin-bottom: 3rem;
+  }
 
+  header {
+    height: 50vh;
+  }
 }
 
+ 
 @media screen and (max-width: 480px) {
   html {
     font-size: 50%;
   }
-  /*    
+}
+  /* @media screen and (max-width: 280px){
+    header {
+  height: 60vh;
+  width: 121%;
+}
+.about {
+  padding: 2rem 9%;
+  width: 121%;
+  background-color: #ffffff;
+}
+.products{
+  width: 121%;
+}
+.sec2{
+  width: 121%;
+}
+.sec2_content .twoo p{
+  font-size: 2rem;
+}
+.sec2 .h4{
+  font-size: 1.5rem;
+  width: 170%;
+}
+.contact{
+  width: 121%;
+}
+.footer{
+  width: 121%;
+}
+  } */
+/* 
+  .sec2_content p {
+    font-size: 1rem;
+    font-family: "Montserrat", sans-serif;
+  }
+  .sec2_content h4 {
+    font-size: 1rem;
+    font-family: "Tillana", cursive;
+    width: 40rem;
+  } 
+   
 header{
     background: url('../SKORD/images/water5.jpg') no-repeat;
     background-size: cover;
@@ -427,4 +628,4 @@ header{
         list-style: none;
         display: none;
     } */
-}
+

@@ -1,5 +1,5 @@
 const typed = new Typed('.typing', {
-    strings: ['Table water you can trust.'],
+    strings: ['Relax, unwind and have fun with SKORD.'],
     typeSpeed: 100,
     backSpeed: 100,
     backDelay: 1000,
