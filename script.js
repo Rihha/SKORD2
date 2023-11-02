@@ -14,7 +14,7 @@ navIcons.addEventListener('click',()=>{
 // }
 
 window.onscroll=()=>{
-    if(window.scrollY > 30){
-        navBar.style.backgroundColor='black'
+    if(window.scrollY > 60){
+        navBar.style.backgroundColor='black';
     }
 }

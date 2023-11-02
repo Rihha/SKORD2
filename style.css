@@ -58,7 +58,7 @@ header {
   background: url("images/water5.jpg") no-repeat;
   background-size: cover;
   background-position: center;
-  height: 70vh;
+  height: 90vh;
 }
 
 .navBar {
@@ -113,7 +113,6 @@ header {
   width: 1rem;
   height: 3rem;
 }
-
 .navIcons {
   font-size: 2rem;
   color: aqua;
@@ -122,10 +121,17 @@ header {
 .cartt {
   margin-left: 1rem;
   display: inline-block;
+  padding: .9rem;
+  /* background: aqua; */
+  border: .3rem solid aqua;
+  border-radius: 50%;
 }
 .cartt i {
-  font-size: 2.5rem;
-  color: #ffffff;
+  font-size: 2rem;
+  color: white;
+}
+.cartt:hover{
+  opacity: .8;
 }
 .sec1 {
   padding: 2rem 9%;
@@ -229,7 +235,7 @@ header {
   grid-template-columns: repeat(auto-fit, minmax(30rem, 1fr));
   gap: 6rem;
   color: black;
-  padding: 6rem 0;
+  padding: 5rem 0;
 }
 .product_box {
   color: white;
@@ -313,11 +319,15 @@ header {
   padding: 0 6.2rem;
 }
 .contact {
-  background-color: black;
+  /* background-color: black; */
+  background: rgba(255, 255, 255, .3);
+}
+.contact h1{
+  color: #000;
 }
 .contact form {
   width: 60rem;
-  border: 0.1rem solid black;
+  /* border: 0.1rem solid black; */
   margin: 2rem auto;
   text-align: center;
   margin-bottom: 5rem;
@@ -333,9 +343,14 @@ header {
   padding: 1.5rem;
   font-size: 1.5rem;
   font-family: "Tillana";
-  color: black;
+  /* color: black; */
+  color: #ffffff;
   margin: 0.7rem 0;
   border-radius: 0.8rem;
+  background: #000;
+}
+.cont_head{
+  color: #000;
 }
 .btn {
   padding: 1.5rem 2rem;
@@ -397,7 +412,6 @@ header {
 }
 .footer_icons i:hover{
   background-color: aqua;
-  /* color: white; */
 }
 .footer_under {
   color: black;
@@ -406,8 +420,8 @@ header {
   background-color: aqua;
 }
 .foot {
-  margin-top: 2rem;
-  font-size: 2rem;
+  margin-top: .7rem;
+  font-size: 1.4rem;
 }
 .foot p span {
   color: black;
