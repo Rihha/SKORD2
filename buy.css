@@ -8,7 +8,7 @@
   border: none;
   text-decoration: none;
   scroll-behavior: smooth;
-  font-family: 'Montserrat', sans-serif;
+  font-family: "Montserrat", sans-serif;
   transition: all 0.6s linear;
 }
 
@@ -19,15 +19,14 @@ html {
   scroll-padding-top: 7rem;
 }
 
-html::-webkit-scrollbar{
+html::-webkit-scrollbar {
   width: 1rem;
 }
-html::-webkit-scrollbar-thumb{
+html::-webkit-scrollbar-thumb {
   background: aqua;
   border-radius: 1rem;
-  
 }
-html::-webkit-scrollbar-track{
+html::-webkit-scrollbar-track {
   background: black;
 }
 body {
@@ -35,78 +34,76 @@ body {
   width: 100%;
   background: transparent;
 }
-.navBar{
-    background-color: black;
-    border-bottom: .1rem solid white;
+.navBar {
+  background-color: black;
+  border-bottom: 0.1rem solid white;
 }
-.buy_main{
-    /* background:black; */
-    height: 100vh;
-    color: black;
-    padding: 20rem 12%;
-    display: grid;
-    place-items: center;
-    margin-bottom: 10rem ;
+.buy_main {
+  /* background:black; */
+  height: 100vh;
+  color: black;
+  padding: 20rem 12%;
+  display: grid;
+  place-items: center;
+  margin-bottom: 10rem;
 }
 /* .buy_header{
     padding: 2rem 9%;
 } */
-.buy1{
-    display: flex;
-    flex-direction: row;
-    /* justify-content: space-between; */
-    align-items: center;
-    gap: 5rem;
-    /* padding: 9% 10%; */
-    color: black;
+.buy1 {
+  display: flex;
+  flex-direction: row;
+  /* justify-content: space-between; */
+  align-items: center;
+  gap: 5rem;
+  /* padding: 9% 10%; */
+  color: black;
 }
-.images{
-    width: 25vw;
-    box-shadow: 0 0px 35px rgba(17,44,145,.1);;
+.images {
+  width: 25vw;
+  box-shadow: 0 0px 35px rgba(17, 44, 145, 0.1);
 }
-.images img{
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
+.images img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
 }
-.buy1 .text h2{
-   /* width: 2rem; */
-    font-size: 4rem;
-    margin-bottom: 2rem;
+.buy1 .text h2 {
+  /* width: 2rem; */
+  font-size: 4rem;
+  margin-bottom: 2rem;
 }
-.text p{
-    /* color: white; */
-    width: 30rem;
-    font-size: 1.5rem;
-    margin-bottom: 5rem;
+.text p {
+  /* color: white; */
+  width: 30rem;
+  font-size: 1.5rem;
+  margin-bottom: 5rem;
 }
-.text .money{
+.text .money {
   font-size: 2.7rem;
   font-weight: bolder;
 }
-.text a{
+.text a {
   font-size: 1.6rem;
-    margin-top: 0;
-    background-color: aqua;
-    color: black;
-    padding: 1.5rem 7.5rem;
-    border-radius: 5%;
+  margin-top: 0;
+  background-color: aqua;
+  color: black;
+  padding: 1.5rem 7.5rem;
+  border-radius: 5%;
 }
-.text a:hover{
+.text a:hover {
   box-shadow: 0 0 3rem aqua;
   transform: scale(1.1);
 }
 
-
 @media screen and (max-width: 768px) {
-  
-.buy1{
-  flex-direction: column;
-}
-.images{
-  width: 50vw;
-}
-.cartt{
-  display: none;
-}
+  .buy1 {
+    flex-direction: column;
+  }
+  .images {
+    width: 50vw;
+  }
+  .cartt {
+    display: none;
+  }
 }

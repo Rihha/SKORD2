@@ -1,6 +1,6 @@
 @import url("https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@1,300&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Montserrat&display=swap");
-@import url('https://fonts.googleapis.com/css2?family=Playpen+Sans&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Playpen+Sans&display=swap");
 * {
   margin: 0;
   padding: 0;
@@ -9,7 +9,7 @@
   border: none;
   text-decoration: none;
   scroll-behavior: smooth;
-  font-family: 'Playpen Sans', cursive;
+  font-family: "Playpen Sans", cursive;
   /* font-family: "Ubuntu", sans-serif; */
   transition: all 0.6s linear;
 }
@@ -121,17 +121,17 @@ header {
 .cartt {
   margin-left: 1rem;
   display: inline-block;
-  padding: .9rem;
+  padding: 0.9rem;
   /* background: aqua; */
-  border: .3rem solid aqua;
+  border: 0.3rem solid aqua;
   border-radius: 50%;
 }
 .cartt i {
   font-size: 2rem;
   color: white;
 }
-.cartt:hover{
-  opacity: .8;
+.cartt:hover {
+  opacity: 0.8;
 }
 .sec1 {
   padding: 2rem 9%;
@@ -144,7 +144,7 @@ header {
 .main h1 {
   color: white;
   font-size: 5rem;
-  font-family: "Montserrat" ;
+  font-family: "Montserrat";
 }
 .main h1 span {
   color: aqua;
@@ -157,9 +157,8 @@ header {
 }
 .about {
   padding: 2rem 9%;
-    background-color: #ffffff;
-   
-  }
+  background-color: #ffffff;
+}
 .about_container {
   display: flex;
   align-items: center;
@@ -314,11 +313,101 @@ header {
   border-right: 2px solid aqua;
   padding: 0 6.2rem;
 }
+.delivery{
+  background-color: #000;
+  padding: 2rem 9%;
+}
+.delivery_box{
+  display: flex;
+  /* flex-direction: row; */
+   align-items: center;
+  justify-content: center; 
+  /* text-align: center; */
+  gap: 3rem;
+}
+.side1{
+  display: block;
+}
+.side1 h2{
+  color: white;
+  font-size: 5rem;
+  margin-bottom: 3rem;
+}
+.side1 p{
+  color: white;
+  font-size: 1.5rem;
+  width: 40rem;
+  margin-bottom: 1.5rem;
+}
+/* .side1 i{
+  font-size: 2rem;
+} */
+.side1 a{
+  background-color: aqua;
+  color: black;
+  padding: 1.5rem ;
+  display: flex;
+  align-items: center;
+  text-align: center;
+  justify-content: center;
+  width: 50%;
+  font-size: 1.5rem;
+  border: none;
+  border-radius: 4rem;
+  margin-top: 4rem;
+}
+.side1 a:hover{
+  background-color: white;
+  color: aqua;
+}
+.side2{
+  padding: 6rem;
+  width: 35rem;
+  background-color: #ffffff;
+  border-radius: 1rem;
+  align-items: center;
+  text-align: center;
+  /* justify-content: center; */
+  color: #000;
+}
+.side2 input{
+  border: 1px solid black;
+  padding: 2rem;
+  border-radius: 4rem;
+  margin-top: 3rem ;
+}
+.side2 h2{
+  font-size: 3rem;
+}
+.add input{
+  width: 10rem;
+  height: 3rem;
+  gap: 4rem;
+}
+.add a{
+  background-color: #002c8f;
+  color: white;
+  padding: 1.5rem ;
+  display: flex;
+  align-items: center;
+  text-align: center;
+  justify-content: center;
+  width: 70%;
+  margin-block: auto;
+  font-size: 1.5rem;
+  border: none;
+  border-radius: 4rem;
+  margin-top: 4rem;
+  margin-left: 3rem;
+}
+.add a:hover{
+  transform: scale(1.1);
+}
 .contact {
   /* background-color: black; */
-  background: rgba(255, 255, 255, .3);
+  background: rgba(255, 255, 255, 0.3);
 }
-.contact h1{
+.contact h1 {
   color: #000;
 }
 .contact form {
@@ -346,10 +435,10 @@ header {
   background: #000;
 }
 .contact form .input_box input::placeholder,
-.contact form textarea::placeholder{
+.contact form textarea::placeholder {
   color: #999;
 }
-.cont_head{
+.cont_head {
   color: #000;
 }
 .btn {
@@ -410,7 +499,7 @@ header {
   border-radius: 50%;
   cursor: pointer;
 }
-.footer_icons i:hover{
+.footer_icons i:hover {
   background-color: aqua;
 }
 .footer_under {
@@ -420,7 +509,7 @@ header {
   background-color: aqua;
 }
 .foot {
-  margin-top: .7rem;
+  margin-top: 0.7rem;
   font-size: 1.4rem;
 }
 .foot p span {
@@ -523,7 +612,7 @@ header {
     border-right: 2px solid aqua;
     padding: 0 2rem;
   }
-  
+
   .footer_content p {
     margin-top: 3rem;
     font-size: 1.5rem;
@@ -533,11 +622,14 @@ header {
   header {
     height: 50vh;
   }
-  .footer_content p{
+  .footer_content p {
     width: 40rem;
   }
-  .cartt{
+  .cartt {
     display: none;
+  }
+  .delivery_box{
+    flex-direction: column;
   }
 }
 
