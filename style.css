@@ -155,7 +155,7 @@ header {
   color: #ffffff;
   font-size: 1.6rem;
   padding: 1rem 0;
-  font-family: "Tillana";
+  font-family: "Playpen Sans", cursive;
 }
 .about {
   padding: 2rem 9%;
@@ -197,7 +197,7 @@ header {
   font-size: 1.6rem;
   line-height: 1.5;
   padding: 2rem 0;
-  font-family: "Tillana";
+  font-family: "Playpen Sans", cursive;
 }
 /* .about_content p span {
   color: aqua;
@@ -217,7 +217,7 @@ header {
 .lines p {
   color: black;
   font-size: 2rem;
-  font-family: "Tillana";
+  font-family: "Playpen Sans", cursive;
 }
 .lines .inner .two {
   border-right: 2px solid aqua;
