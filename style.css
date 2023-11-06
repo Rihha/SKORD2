@@ -58,7 +58,7 @@ header {
   background: url("images/water5.jpg") no-repeat;
   background-size: cover;
   background-position: center;
-  height: 90vh;
+  height: 70vh;
 }
 
 .navBar {
@@ -84,6 +84,7 @@ header {
 }
 .logo a span {
   color: aqua;
+  font-family: "Montserrat", sans-serif;
 }
 .logo p {
   color: #ffffff;
@@ -99,7 +100,8 @@ header {
 .navLink a {
   display: inline-block;
   margin-left: 4rem;
-  font-family: "Tillana", sans-serif;
+  /* font-family: "Tillana", sans-serif; */
+  font-family: "Playpen Sans", cursive;
   text-decoration: none;
   font-size: 2rem;
   color: #ffffff;
@@ -151,7 +153,7 @@ header {
 }
 .main p {
   color: #ffffff;
-  font-size: 1.3rem;
+  font-size: 1.6rem;
   padding: 1rem 0;
   font-family: "Tillana";
 }
@@ -197,9 +199,9 @@ header {
   padding: 2rem 0;
   font-family: "Tillana";
 }
-.about_content p span {
+/* .about_content p span {
   color: aqua;
-}
+} */
 .lines {
   margin: 3rem 0;
   margin-top: 5rem;
@@ -302,11 +304,13 @@ header {
 }
 .sec2_content p {
   font-size: 5rem;
-  font-family: "Montserrat";
+  font-family: "Playpen Sans", cursive;
+  /* font-family: "Montserrat"; */
 }
 .sec2_content h4 {
   font-size: 1.5rem;
-  font-family: "Tillana";
+  /* font-family: "Tillana"; */
+  font-family: "Playpen Sans", cursive;
   width: 40rem;
 }
 .twoo {
@@ -427,7 +431,8 @@ header {
   width: 100%;
   padding: 1.5rem;
   font-size: 1.5rem;
-  font-family: "Tillana";
+  font-family: "Playpen Sans", cursive;
+  /* font-family: "Tillana"; */
   /* color: black; */
   color: #ffffff;
   margin: 0.7rem 0;
