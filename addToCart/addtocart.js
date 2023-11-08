@@ -1,25 +1,39 @@
 const product = [
     {
         id: 0,
-        image: 'image/water_1.jpg',
+        image: 'images/single_water.jpg',
         title: 'bottle',
         price: 100,
     },
     {
         id: 1,
-        image: 'image/water_1.jpg',
+        image: 'images/dispenser2_water.webp',
         title: 'bottle',
         price: 1000,
     },
     {
         id: 2,
-        image: 'image/water_1.jpg',
+        image: 'images/pack_water.webp',
         title: 'bottle',
         price: 200,
     },
     {
         id: 3,
-        image: 'image/water_1.jpg',
+        image: 'images/single_water.jpg',
+        title: 'Bottle',
+        price: 1000,
+    }
+    ,
+    {
+        id: 3,
+        image: 'images/single_water.jpg',
+        title: 'Bottle',
+        price: 1000,
+    }
+    ,
+    {
+        id: 3,
+        image: 'images/single_water.jpg',
         title: 'Bottle',
         price: 1000,
     }
