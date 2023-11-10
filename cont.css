@@ -1,0 +1,109 @@
+@import url("https://fonts.googleapis.com/css2?family=Playpen+Sans&display=swap");
+/* *{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Playpen Sans", cursive;
+    font-size: 18px;
+    outline: none;
+    text-decoration: none;
+    transition: all 0.6s linear;
+}
+body{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+.header{
+    height: 80px;
+    width: 70%;
+    background-color: black;
+    border-radius: 3px;
+    margin: 30px 0px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 15px;
+}
+.header .logo{
+    font-size: 30px;
+    font-weight: bold;
+    color: white;
+}
+.logo span{
+    color: aqua;
+    font-size: 30px;
+}
+.cart{
+    display: flex;
+    background-color: white;
+    justify-content: space-between;
+    align-items: center;
+    padding: 7px 10px;
+    border-radius: 3px;
+    width: 80px;
+}
+.fa-solid{
+    color: black;
+}
+.cart p{
+    height: 22px;
+    width: 22px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 22px;
+    background-color: black;
+    color: white;
+} */
+.addres{
+  margin-bottom: 5rem;
+  margin: 0 15rem;
+}
+.part1{
+    width: 60rem;
+    margin: 6rem auto;
+    text-align: center;
+    border-bottom: 2px solid aqua;
+}
+.part1 h1{
+    color: black;
+    font-size: 2rem;
+}
+.addres h2{
+    font-size: 1.5rem;
+    font-weight: bold;
+    margin-bottom: .7rem;
+}
+.addres h2 span{
+    color: aqua;
+}
+.addres i{
+    font-size: 2.5rem;
+}
+.flex{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 1rem;
+}
+.flex h2{
+    font-size: 1.8rem;
+}
+/* .contact form .input_box {
+    display: flex;
+    justify-content: space-between;
+    gap: 2rem;
+  }
+  .contact form .input_box input,
+  .contact form textarea {
+    width: 200%;
+    padding: 1.5rem;
+    font-size: 1.5rem;
+    font-family: "Playpen Sans", cursive;
+    color: #ffffff;
+    margin: 0.7rem 0;
+    border-radius: 0.8rem;
+    background: #000;
+  } */
