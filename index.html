@@ -24,16 +24,16 @@
         <div class="navLink">
           <a href="#Home">Home</a>
           <a href="#about">About us</a>
-          <a href="cart.html">Products</a>
+          <a href="./cart.html">Products</a>
           <a href="./contact.html">Contact us</a>
         </div>
-        <i class='cartt bx bx-search-alt'></i>
-        <!-- <a class="cartt" href="./addToCart/cart.html"><i class='bx bx-cart-alt'></i></a> -->
+        <!-- <i class='cartt bx bx-search-alt'></i> -->
+        <a class="cartt" href="./cart.html"><i class='bx bx-search-alt'></i></a>
 
-        <div class="navIcons">
+        <!-- <div class="navIcons">
           <i class="bx bx-menu"></i>
           <a class="cartt" href="./addToCart/cart.html"><i class='bx bx-cart-alt'></i></a>
-        </div>
+        </div> -->
       </nav>
 
       <div class="sec1" id="Home">
@@ -169,13 +169,13 @@
         </div>
         <div class="side2">
           <h2>Please, fill delivery form</h2>
-          <form action="">
-            <input type="text" placeholder="Your name">
+          <form action="https://formspree.io/f/xpzgbyov" method="POST">
+            <input type="text" placeholder="Full name" name="Name" required />
             <input type="text" placeholder="Phone number">
             <div class="add">
               <input type="text" placeholder="Address">
               <input type="text" placeholder="Bottle">
-              <a href="cart.html">Make your order!</a>
+              <input class="btnn" type="submit" value="Send message" />
             </div>
           </form>
         

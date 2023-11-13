@@ -43,6 +43,16 @@ section {
   /* background-color: black; */
   border-bottom: 0.1rem solid white;
 }
+.logo a {
+  color: aliceblue;
+  font-size: 3.7rem;
+  font-family: "Montserrat", sans-serif;
+}
+.logo a span {
+  color: aqua;
+  font-size: 3.7rem;
+  font-family: "Montserrat", sans-serif;
+}
 .cart_header {
   background: rgb(0, 0, 0);
   height: 50vh;
