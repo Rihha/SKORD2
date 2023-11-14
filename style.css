@@ -138,11 +138,11 @@ header {
 .search input.active{
   margin-right: 0;
 }
- i {
+.search i {
   font-size: 3.5rem;
   color: white;
 }
-i:hover {
+.search i:hover {
   opacity: 0.8;
 }
 .sec1 {
