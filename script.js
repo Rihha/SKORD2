@@ -18,3 +18,8 @@ window.onscroll=()=>{
         navBar.style.backgroundColor='black';
     }
 }
+let search = document.querySelector("#search")
+let input = document.querySelector("#input")
+search.addEventListener('click',()=>{
+    input.classList.toggle('active')
+})
