@@ -1,4 +1,4 @@
-@import url("https://fonts.googleapis.com/css2?family=Playpen+Sans&display=swap");
+/* @import url("https://fonts.googleapis.com/css2?family=Playpen+Sans&display=swap");
 *{
     margin: 0;
     padding: 0;
@@ -72,7 +72,7 @@ body{
     width: 40%;
     border-radius: 5px;
     background-color: white;
-    /* border: .1rem solid #222; */
+    
      box-shadow: 0 5px 5px #999; 
     margin-left: 20px;
     padding: 15px;
@@ -189,4 +189,4 @@ button:hover{
     padding: 10px;
     box-shadow: 0 0px 35px rgba(17, 44, 145, 0.1);
 }
-}
+} */
