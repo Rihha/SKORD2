@@ -294,6 +294,35 @@ header {
 .product_content .btn {
   margin-top: 2rem;
 }
+.btn {
+  padding: 1.5rem 2rem;
+  border: none;
+  border-radius: 1rem;
+  background-color: aqua;
+  font-size: 1.5rem;
+  display: inline-block;
+}
+.btn:hover {
+  box-shadow: 0 0 3rem aqua;
+  transform: scale(1.1);
+}
+.see_more{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  margin: auto 43rem;
+}
+.btn2{
+  padding: 1.5rem 2rem;
+  border: none;
+  border-radius: 1rem;
+  background-color: aqua;
+  font-size: 1.5rem;
+}
+.btn2:hover {
+  transform: scale(1.1);
+}
 .sec2 {
   background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)),
     url(images/water2.jpg);
@@ -304,7 +333,6 @@ header {
   height: 50vh;
   background-attachment: fixed;
 }
-
 .sec2_content {
   color: white;
   display: flex;
@@ -457,18 +485,6 @@ header {
 }
 .cont_head {
   color: #000;
-}
-.btn {
-  padding: 1.5rem 2rem;
-  border: none;
-  border-radius: 1rem;
-  background-color: aqua;
-  font-size: 1.5rem;
-  display: inline-block;
-}
-.btn:hover {
-  box-shadow: 0 0 3rem aqua;
-  transform: scale(1.1);
 }
 .footer {
   display: flex;
