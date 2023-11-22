@@ -43,6 +43,66 @@
 .flex h2{
     font-size: 1.8rem;
 }
+.footer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    gap: 3rem;
+    background: black;
+    color: white;
+    border-top: 0.1rem solid aqua;
+  }
+  .footer_content {
+    margin: 6.5rem;
+  }
+  .footer_content h1 {
+    font-size: 5rem;
+    margin-bottom: 0;
+  }
+  .footer_content h1 span {
+    color: aqua;
+  }
+  .footer_content h2 {
+    margin-top: -8px;
+    font-size: 1.3rem;
+    margin-bottom: 0;
+  }
+  .footer_content p {
+    margin-top: 3rem;
+    font-size: 1.9rem;
+    width: 70rem;
+    margin-bottom: 3rem;
+  }
+  .footer_icons {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 1rem;
+  }
+  .footer_icons i {
+    background-color: white;
+    padding: 2rem;
+    color: black;
+    font-size: 2.5rem;
+    border-radius: 50%;
+    cursor: pointer;
+  }
+  .footer_icons i:hover {
+    background-color: aqua;
+  }
+  .footer_under {
+    color: black;
+    border-top: 0.1rem solid aqua;
+    text-align: center;
+    background-color: aqua;
+  }
+  .foot {
+    margin-top: 0.7rem;
+    font-size: 1.4rem;
+  }
+  
 @media screen and (max-width: 900px){
     .cart_header {
         height: 30vh;
